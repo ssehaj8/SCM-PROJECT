@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .column img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #6C63FF;
+            color: white;
+        }
+        
+        .igm {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            float: right;
+            bottom: 30px;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #6C63FF;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about-section">
+        <img class="igm" src="assets\contact_us.png">
+        <h1>About Us Page</h1>
+        <p>We are upcoming web developers studing in Chitkara University and this is our ecommerce website named "TINY LITTLE THINGS"</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
+
+    <h1>Our Team</h1>
+    <div class="row">
+        <div class="column">
+            <img src="./assets/about_us_sehaj.jpeg" alt="Sehaj">
+            <div class="container">
+                <h2>Sehajpreet Kaur</h2>
+                <p class="title">Developer</p>
+                <p> I'am the the stylist and developer behind this web page</p>
+                <p>sehajpreet1830.be21@chitkara.edu.in</p>
+                <p><button class="button" onclick="window.location.href='contactus.html'">Contact</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <img src="WhatsApp Image 2022-05-16 at 10.14.44 AM.jpeg" alt="Jagrit">
+            <div class="container">
+                <h2>Tisha</h2>
+                <p class="title">Developer</p>
+                <p> I'am the the stylist and developer behind this web page</p>
+                <p>tisha1857.be21@chitkara.edu.in</p>
+                <p><button class="button" onclick="window.location.href='contactus.html'">Contact</button></p>
+            </div>
+        </div>
+</body>
+
+</html>
